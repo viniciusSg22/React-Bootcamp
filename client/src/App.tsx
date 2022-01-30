@@ -1,33 +1,16 @@
-import BarChart from 'components/BarChart/barChart';
-import DonutChart from 'components/DonutChart/donutChart';
-import Footer from 'components/Footer/footer';
-import Navbar from 'components/Navbar/navbar';
-import Table from 'components/Table/table';
-import React from 'react';
+import Dashboard from "pages/Dashboard/dashboard";
+import Home from "pages/Home/dashboard";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className='container'>
-        <h1 className='py-3'>Dashboarde de vendas!</h1>
-        <div className='row px-3'>
-          <div className='col-sm-6 text-center'>
-            <h5>Porcentagem de sucesso (%)</h5>
-            <BarChart />
-          </div>
-          <div className='col-sm-6 text-center'>
-            <h5>Todas vendas</h5>
-            <DonutChart />
-          </div>
-        </div>
-        <div className='py-3'>
-          <h2>Todas as vendas</h2>
-        </div>
-        <Table />
-      </div>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
