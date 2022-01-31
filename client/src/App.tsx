@@ -1,3 +1,4 @@
+import React from "react";
 import Dashboard from "pages/Dashboard/dashboard";
 import Home from "pages/Home/dashboard";
 import { Routes, Route } from "react-router-dom";

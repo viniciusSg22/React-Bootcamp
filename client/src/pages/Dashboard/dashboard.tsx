@@ -1,3 +1,4 @@
+import React from "react";
 import BarChart from "components/BarChart/barChart";
 import DonutChart from "components/DonutChart/donutChart";
 import Footer from "components/Footer/footer";
