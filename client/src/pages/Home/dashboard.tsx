@@ -1,6 +1,5 @@
 import Footer from "components/Footer/footer";
 import Navbar from "components/Navbar/navbar";
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {

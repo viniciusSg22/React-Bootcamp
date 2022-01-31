@@ -3,7 +3,6 @@ import DonutChart from "components/DonutChart/donutChart";
 import Footer from "components/Footer/footer";
 import Navbar from "components/Navbar/navbar";
 import Table from "components/Table/table";
-import React from "react";
 
 export default function Dashboard() {
   return (
